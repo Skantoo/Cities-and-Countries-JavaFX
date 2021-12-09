@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="BrunoHrgovicPPPKPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>hr.algebra.model.City</class>
+    <class>hr.algebra.model.Country</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://pppk-hrgovic.database.windows.net:1433;databaseName=Cities;database=Cities;user=sas@pppk-hrgovic;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;"/>
+      <property name="javax.persistence.jdbc.user" value="sas"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="Pa$$w0rd"/>
+    </properties>
+  </persistence-unit>
+</persistence>
